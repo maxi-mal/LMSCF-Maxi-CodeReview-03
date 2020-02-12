@@ -1,0 +1,228 @@
+.headercontainer {
+    display: flex;
+    height: 30vh;
+    background: #F9E8E8;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: center; } }
+body {
+  font-family: arial, sans-serif; }
+
+.headeritem {
+  padding: 30px; }
+
+#headerlogo {
+  width: 320px;
+  height: 70px;
+  padding-left: 20px; }
+
+#headerbanner {
+    }
+
+#nav {
+  height: auto; }
+
+ul {
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #7a0000;
+  font-size: 25pt;
+  font-style: bold;
+  font-color: lightgrey;
+  padding: 5px;
+  padding-left: 30px; }
+
+li {
+  float: left; }
+
+li::after {
+  clear: both; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none; }
+
+li a:hover {
+  background-color: #eca1a6; }
+
+.smallnavcontainer li {
+  font-size: 13pt;
+  justify-content: flex-start; }
+
+.footercontainer1 {
+  display: flex;
+  background-color: black;
+  height: 120px;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.footeritem1 {
+  width: auto;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px; }
+
+.footeritem1 img {
+  width: 280px;
+  height: 60px; }
+
+.smallnavcontainer {
+  color: white;
+  display: flex;
+  background-color: black; }
+
+.footercontainer2 {
+  display: flex;
+  background-color: black;
+  height: 30px;
+  flex-direction: row;
+  justify-content: center; }
+
+.footeritem2 {
+  color: white;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 12pt;
+  background-color: black; }
+
+.backgroundtraffic {
+	border: 1px;
+	border-color: green;
+	background-size: cover;
+	position: relative;
+}
+
+.carinsurancetext {
+	font-size: 30pt;
+	color: white;
+	border-color: green;
+	position: absolute;
+	float: left;
+	top: 20pt;
+	left: 20pt;
+}
+
+.seethroughcontainer {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	opacity: 0.8;
+	border: 5pt;
+	border-color: grey;
+	top: 90px;
+	left: 50px;
+	right: 50px;
+	position: absolute;
+	bottom:20pt;
+	border-style: solid;
+}
+
+.greatcoveragetext {
+	color: black;
+	font-size: 40pt;
+	top: 20px;
+	justify-content: center;
+	width: 50%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.textboxcontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 90vH;
+	align-items: center;
+}
+
+.textboxitem {
+	border-width: 5px;
+	border-color: lightgrey;
+	border-top: black;
+	height: 55vH;
+	width: 350px;
+	border-style: solid;
+	padding: 20pt;
+}
+
+.greytextbox {
+	color: black;
+	font-size: 20pt;
+	background-color: lightgrey;
+	justify-content: center;
+	padding: 20px;
+	text-align: center;
+}
+
+.nameform {
+	left: 20%;
+	top: 30%;
+	bottom: 20px;
+	color: black;
+	position: absolute;
+	font-size: 19pt;
+}
+
+.ageform {
+	position: absolute;
+	right: 20%;
+	top: 30%;
+	color: black;
+	font-size: 19pt;
+}
+
+.countryform {
+	left: 20%;
+	top: 50%;
+	bottom: 20px;
+	color: black;
+	position: absolute;
+	font-size: 19pt;
+}
+
+.carform {
+	position: absolute;
+	right: 20%;
+	top: 50%;
+	color: black;
+	font-size: 19pt;
+}
+
+.submissionfield {
+	height: 40px;
+	width: 300px;
+	background-color: white;
+}
+
+#calculatebutton {
+	background-color: green;
+	color: white;
+	font-size: 22pt;
+	text-align: center;
+	border-radius: 25px;
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 65%;
+}
+
+.smallnavul {
+	background-color: black;
+}
+
+#result {
+	background-color: none;
+	font-size: 24pt;
+	color: green;
+	text-align: center;
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	top: 85%;
+}

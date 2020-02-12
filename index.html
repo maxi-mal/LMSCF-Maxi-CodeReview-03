@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Code Review 03</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link 
+</head>
+<body>
+<header>
+	<div class="headercontainer">
+		<div class="headeritem">
+			<img id="headerlogo" src="img/logo.png" alt="CarInsurance"/>
+		</div>
+		<div class="headeritem">
+			<img id="headerbanner" src="img/banner.png" alt="CodeFactory"/>
+		</div>
+	</div>
+</header>
+<nav>
+	<div id="nav">
+		<ul>
+			<li><a href=" ">Home</a></li>
+			<li><a href=" ">Team</a></li>
+		</ul>
+	</div>
+</nav>
+	<div class="backgroundtraffic">
+		<img src="img/traffic-332857_1920.jpg" alt="Backgroundtraffic" width="100%">
+			<div class="carinsurancetext">Car Insurance
+			</div>
+			<div class="seethroughcontainer">
+				<div class="greatcoveragetext">Great Coverage begins with a custom quote
+				</div>
+			<div class="nameform">
+				<form>
+					Your Name:<br>
+					<input type="text" id="nameform" name="CustomerName" value="" class="submissionfield">
+				</form>
+			</div>
+			<div class="ageform">
+				<form>
+					Age:<br>
+					<input type="number" id="ageform" name="Age" value="" class="submissionfield">
+				</form>
+			</div>
+			<br>
+			<div class="countryform">
+				<form>
+				Country:<br>
+					<select id="countryform" name="Country" class="submissionfield">
+						<option value="1">Austria</option>
+						<option value="2">Greece</option>
+						<option value="3">Hungary</option>
+					</select>
+				</form>
+			</div>
+			<div class="carform">
+				<form>
+					Horsepower of your car:<br>
+					<input type="number" id="carform" value="" name="car" class="submissionfield">
+				</form>
+			</div>
+			<button type="button" onclick="calculateInsurance()" id="calculatebutton">Calculate</button>
+			<div id="result">Printed calculation goes here
+			</div>
+		</div>
+	</div>
+	<div class="greytextbox">
+		<h4 style="spacing:">Un-complicating car coverage</h4>Understanding car coverage shouldn't be so hard.<br>We'll guide you through available coverage types,<br>starting with who and what is covered.
+	</div>
+	<div class="textboxcontainer">
+		<div class="textboxitem">
+			<p style="color:blue; font-size:16pt">What comes standard</p>
+			<p style="line-height:normal">The coverage you need</p>
+			<p><img src="img/checkmark-16.png">Bodily Injury Liability</p>
+			<p><img src="img/checkmark-16.png">Property Damage</p>
+			<p><img src="img/checkmark-16.png">Medical Payments</p>
+			<hr>
+			<h5>Benefits</h5>12-month rate guarantee | 24/7 customer<br>
+			service | Lifetime Repair Guarantee
+		</div>
+		<div class="textboxitem">
+			<p style="color:blue; font-size:16pt">Add-on protection and coverage</p>
+			<p style="line-height:normal">For more peace of mind</p>
+			<p><img src="img/checkmark-16.png">Better Car Replacement</p>
+			<p><img src="img/checkmark-16.png">Towing and Labor</p>
+			<p><img src="img/checkmark-16.png">Rental Car Coverage</p>
+			<hr>
+			<h5>Earned Benefits<h5>Accident forgiveness<sup>1</sup> | New car<br>
+			Replacement &trade;
+		</div>
+	</div>
+<footer>
+	<div class="smallnavcontainer">
+		<ul class="smallnavul">
+			<li><a href=" ">Home</a></li>			
+			<li><a href=" ">Team</a></li>
+		</ul>
+	</div>
+	<div class="footercontainer1">
+	<div class="footeritem1">
+		<img src="img/logo-inv.png" alt="CarInsurance"/>
+	</div>
+		</div>	
+		<div class="footercontainer2">
+			<div class="footeritem2">Margarete Lengger - Code Factory 2018
+			</div>
+		</div>
+</footer>
+<script src="data.js">
+
+var nameform = document.getElementById("nameform").value;
+var ageform = Number(document.getElementById("ageform").value);
+var carform = document.getElementById("carform").value;
+var country = document.getElementById("countryform").selected;
+
+var country = ["Austria", "Greece", "Hungary" ];
+var age = parseInt(ageform);
+var horse_power = parseInt(carform);
+
+function calculateInsurance(age, horse_power, country) {
+var Austrian = horse_power x 100 / age + 50;
+var Hungarian = horse_power x 120 / age + 100;
+var Greek = horse_power x 150 / (age+3) + 50;
+
+var result = [Austrian, Greek, Hungarian];
+return result;
+
+document.getElementById("result").innerHTML = + nameform + ", your insurance costs " + return + "€";
+}
+
+
+</script>
+</body>
+</html>
